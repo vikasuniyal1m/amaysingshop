@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "amaysingshop",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart"
+    },
+    {
+      "name": "amaysingshop (Woo API — compact logs)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "toolArgs": ["--dart-define=WOO_VERBOSE_LOG=true"]
+    },
+    {
+      "name": "amaysingshop (Woo API — full JSON bodies)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "toolArgs": [
+        "--dart-define=WOO_VERBOSE_LOG=true",
+        "--dart-define=WOO_VERBOSE_LOG_FULL=true"
+      ]
+    }
+  ]
+}
